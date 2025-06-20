@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #e0f7fa;
+        }
+
+        .calculator {
+            width: 350px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 2px;
+            background-color: #37474f;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .display {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            border: 4px solid #455a64;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px;
+            font-size: 1.5em;
+            background-color: #eceff1;
+            color: #37474f;
+            border-radius: 5px;
+        }
+
+        .numberBtn {
+            font-weight: bold;
+            background-color: #90a4ae;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .operator {
+            background-color: #ff7043;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        #calculateBtn {
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: 4;
+            background-color: #ff7043;
+            color: white;
+        }
+
+        .zeroBtn {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        button:hover {
+            background-color: #546e7a !important;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="calculator">
+            <div class="display" id="display"></div>
+
+            <button class="operator" id="divideBtn">/</button>
+            <button class="operator" id="multiplyBtn">*</button>
+            <button class="operator" id="subtractBtn">-</button>
+            <button class="operator" id="modBtn">%</button>
+
+            <button class="numberBtn" id="btnseven">7</button>
+            <button class="numberBtn" id="btneight">8</button>
+            <button class="numberBtn" id="btnnine">9</button>
+            <button class="operator" id="addBtn">+</button>
+
+            <button class="numberBtn" id="btnfour">4</button>
+            <button class="numberBtn" id="btnfive">5</button>
+            <button class="numberBtn" id="btnsix">6</button>
+            <button class="operator" id="clearBtn">AC</button>
+
+            <button class="numberBtn" id="btnOne">1</button>
+            <button class="numberBtn" id="btnTwo">2</button>
+            <button class="numberBtn" id="btnThree">3</button>
+            <button class="operator" id="calculateBtn">=</button>
+
+            <button class="numberBtn zeroBtn" id="btnzero">0</button>
+            <button class="numberBtn">.</button>
+        </div>
+
+        <script>
+            // btnOne
+
+            const display = document.getElementById("display");
+            const btnOne = document.getElementById("btnOne");
+            
+            function btnOneisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "1"
+
+                    display.innerText = nayawalatext;
+                }
+                else {
+                    console.log("max limit exceeded")
+                }
+            }
+            btnOne.addEventListener("click", btnOneisclicked);
+
+            // btnTwo
+
+            const btnTwo = document.getElementById("btnTwo");
+            function btnTwoisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "2"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btnTwo.addEventListener("click", btnTwoisclicked);
+
+            //btnthree
+
+            const btnThree = document.getElementById("btnThree");
+            function btnThreeisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "3"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btnThree.addEventListener("click", btnThreeisclicked);
+
+            //btnfour
+
+            const btnfour = document.getElementById("btnfour");
+            function btnfourisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "4"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btnfour.addEventListener("click", btnfourisclicked);
+
+            //btnfive
+
+            const btnfive = document.getElementById("btnfive");
+            function btnfiveisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "5"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btnfive.addEventListener("click", btnfiveisclicked);
+
+            //btnsix
+
+            const btnsix = document.getElementById("btnsix");
+            function btnsixisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "6"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btnsix.addEventListener("click", btnsixisclicked);
+
+            //btnseven
+
+            const btnseven = document.getElementById("btnseven");
+            function btnsevenisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "7"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btnseven.addEventListener("click", btnsevenisclicked);
+
+            //btneight
+
+            const btneight = document.getElementById("btneight");
+            function btneightisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "8"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btneight.addEventListener("click", btneightisclicked);
+
+            //btnnine
+
+            const btnnine = document.getElementById("btnnine");
+            function btnnineisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "9"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btnnine.addEventListener("click", btnnineisclicked);
+
+            //btnzero
+
+            const btnzero = document.getElementById("btnzero");
+            function btnzeroisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "0"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            btnzero.addEventListener("click", btnzeroisclicked);
+
+            //multiplybtn
+
+            const multiplyBtn = document.getElementById("multiplyBtn");
+            function multiplyBtnisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "*"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            multiplyBtn.addEventListener("click", multiplyBtnisclicked);
+
+            //dividebtn
+
+            const divideBtn = document.getElementById("divideBtn");
+            function divideBtnisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "/"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            divideBtn.addEventListener("click", divideBtnisclicked);
+
+            //subtractbtn
+            const subtractBtn = document.getElementById("subtractBtn");
+            function subtractBtnisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "-"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            subtractBtn.addEventListener("click", subtractBtnisclicked);
+
+            //addbtn
+
+            const addBtn = document.getElementById("addBtn");
+            function addBtnisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "+"
+
+                    display.innerText = nayawalatext;
+                } else {
+                    console.log("error")
+                }
+            }
+            addBtn.addEventListener("click", addBtnisclicked);
+
+            //modbtn
+
+            const modBtn = document.getElementById("modBtn");
+            function modBtnisclicked() {
+                if (display.innerText.length < 8) {
+                    let phelewalatext = display.innerText;
+                    let nayawalatext = phelewalatext + "%"
+
+                    display.innerText = nayawalatext;
+                } else ("error")
+            }
+            modBtn.addEventListener("click", modBtnisclicked);
+
+            //clearbtn
+
+            const clearBtn = document.getElementById("clearBtn");
+            function clearBtnisclicked() {
+
+                // agar pura data clear karna hai tab 
+                // display.innerText="";
+                // agar ek ek space clear karna hai tab
+
+                let storage = display.innerText.slice(0, display.innerText.length - 1);
+                display.innerText = storage;
+            }
+            clearBtn.addEventListener("click", clearBtnisclicked);
+
+            //calculatebtn
+
+            const calculateBtn = document.getElementById("calculateBtn");
+            function calculateBtnisclicked() {
+                let result = eval(display.innerText);
+                display.innerText = result;
+            }
+            calculateBtn.addEventListener("click", calculateBtnisclicked);
+        </script>
+
+
+    </body>
+
+</html>
