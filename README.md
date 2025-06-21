@@ -1,38 +1,42 @@
-# 🧪 Mini Web Projects
+# 🧪 HTML, CSS & JavaScript Projects
 
-This repository is a collection of mini frontend web projects built using **HTML**, **CSS**, and **JavaScript**. Each project is simple, responsive, and beginner-friendly. Perfect for practice, learning, or fun!
+This repository contains a collection of beginner to intermediate-level projects built using **HTML**, **CSS**, and **JavaScript**. Each project is designed to improve your frontend development skills through hands-on practice.
 
 ---
 
-## 📁 Projects Included
+## 📁 Projects
 
 ### 1. 🎮 Tic Tac Toe Game
-A classic 2-player Tic Tac Toe game with:
 
-- Interactive board
-- Sound effects and winning animations
-- Score tracking
-- Responsive design
+A fun and interactive 2-player game with:
 
-📂 Path: `/tic-tac-toe.html`  
-🔗 [Live Demo](https://ajay-rawat-op.github.io/Tic-Tac-Toe/tic-tac-toe.html)
+- Sound effects & background music
+- Winning animations
+- Scoreboard to track wins and draws
+- Reset and turn indicator features
+- Responsive design for mobile and desktop
+
+📂 **File**: `tic-tac-toe.html`  
+🔗 **[Live Demo](https://ajay-rawat-op.github.io/html-css-js-projects/tic-tac-toe.html)**
 
 ---
 
 ### 2. 🧮 Calculator
-A simple and stylish calculator with:
 
-- Basic arithmetic operations
-- Clean UI with responsive layout
-- Click and keyboard support
+A simple calculator app that performs basic arithmetic operations:
 
-📂 Path: `/calculator.html`  
-🔗 [Live Demo](https://ajay-rawat-op.github.io/Tic-Tac-Toe/calculator.html)
+- Addition, subtraction, multiplication, division
+- Clean and minimal design
+- Responsive layout
+- Mouse & keyboard support
+
+📂 **File**: `calculator.html`  
+🔗 **[Live Demo](https://ajay-rawat-op.github.io/html-css-js-projects/calculator.html)**
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 How to Use Locally
 
-1. Clone the repository:
-```bash
-git clone https://github.com/Ajay-rawat-op/Tic-Tac-Toe.git
+1. Clone this repository:
+
+git clone https://github.com/Ajay-rawat-op/html-css-js-projects.git
